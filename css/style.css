@@ -1,10 +1,11 @@
 @charset "utf-8";
 /* CSS Document */
 .add_user_comment{
-	width:96%;
-	border:1px solid #e3e3e3;
-	background:#F4F4F4;
-	padding:2%;
+    width:96%;
+    border:1px solid #e3e3e3;
+    background:#F4F4F4;
+    padding:2%;
+    padding-bottom: 50px;
 }
 #add_user_comment.add_user_comment h3 {
     font-size: 1.5em;
@@ -12,108 +13,145 @@
     margin-top: 5px;
 }
 #add_user_comment.add_user_comment textarea{
-	background:#fff;
-	width:100%;
+    background:#fff;
+    width:100%;
 }
 #add_user_comment.add_user_comment #edd_files_names,
 #add_user_comment.add_user_comment #edd_files_names label{
-	width:100%;
-	float:left;
+    width:100%;
+    float:left;
 }
 #add_user_comment.add_user_comment #edd_files_names label{
-	background:#FFDCB9;
-	margin-top:5px;
+    background:#FFDCB9;
+    margin-top:5px;
 }
 label.edd_message_attachment,input[type="submit"].submit-msg{
-	background-color: #333;
+    background-color: #333;
     border: 0 none;
     color: #fff;
     cursor: pointer;
-	padding:5px;
-	margin-top:5px;
-	text-transform:uppercase;
-	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  font-size: 15px;
-  font-weight: bold;
-  line-height: initial;
+    padding:5px;
+    margin-top:5px;
+    text-transform:uppercase;
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: initial;
+    border-radius: 5px;
 }
 input[type="submit"].submit-msg{
-	float:right;
+    float:right;
+    width: 8%;
 }
 label.edd_message_attachment{
-	float:left;
+    /*float:left;*/
+    /*02-08-2016*/
+    float:right;
+    /*02-08-2016*/
+
 }
 .edd-messages-list{
-	clear:both;
-	width:100%;
-	padding-top:5px;
+    clear:both;
+    width:100%;
+    padding-top:5px;
 }
 .edd-messages-list .each-edd-message{
-	border:1px solid #e3e3e3;
-	box-sizing:border-box;
-	box-shadow:0px 0px 4px 3px #fff;
-	margin-top:10px;
-	background-color:#f7fff4;
-	padding:2%;
+    border:1px solid #e3e3e3;
+    box-sizing:border-box;
+    box-shadow:0px 0px 4px 3px #fff;
+    margin-top:10px;
+    background-color:#f7fff4;
+    padding:2%;
 }
 .each-edd-message .each-edd-message-avatar{
-	float:left;
-	width:10%;
+    float:left;
+    width:10%;
 }
 .each-edd-message .each-edd-message-avatar img{
 }
 .each-edd-message .each-edd-message-right-cont{
-	width:85%;
-	float:right;
+    width:85%;
+    float:right;
 }
 .each-edd-message .each-edd-message-avatar .name{
-	margin-left:2%;
-	font-weight:bold;
-	text-transform:capitalize;
+    margin-left:2%;
+    font-weight:bold;
+    text-transform:capitalize;
 }
 .each-edd-message-attach{
-	clear:both;
+    clear:both;
 }
-	
+
 .each-edd-message-attach a{
-	margin-right:1%;
-	border-bottom:1px solid;
+    margin-right:1%;
+    /*border-bottom:1px solid;*/
 }
 .each-edd-message-attach .attach-head{
-	font-size: 1.0em;
+    font-size: 1.0em;
     margin-bottom: 5px;
     margin-top: 5px;
-	font-weight:bold;
+    font-weight:bold;
 }
 .edd-messages-list.edd-close-thread-cont {
-  padding: 10px;
-  clear: both;
+    padding: 10px;
+    clear: both;
 }
 .edd-messages-list a.edd-close-thread:hover {
-  color: #fff;
+    color: #fff;
 }
 .edd-messages-list a.edd-close-thread {
-  background: #ed6a31;
-  background: -webkit-linear-gradient(top, #ed6a31 0%, #e55627 100%);
-  background: linear-gradient(to bottom, #ed6a31 0%, #e55627 100%);
-  outline: none;
-  border: 0 none;
-  color: #fff;
-  cursor: pointer;
-  padding: 5px;
-  margin-top: 5px;
-  text-transform: uppercase;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  font-size: 15px;
-  font-weight: bold;
-  line-height: initial;
-  float: right;
-  clear: both;
+    background: #ed6a31;
+    background: -webkit-linear-gradient(top, #ed6a31 0%, #e55627 100%);
+    background: linear-gradient(to bottom, #ed6a31 0%, #e55627 100%);
+    outline: none;
+    border: 0 none;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: initial;
+    float: right;
+    clear: both;
 }
 
 #dialog-form{
-	display:none;
+    display:none;
 }
 #dialog-form fieldset{
-	width:100%;
+    width:100%;
 }
+td.center-ordertext h4 {
+    text-align: center;
+    border-bottom: 2px solid;
+    height: 12px;
+}
+.center-ordertext h4 span {
+    background-color: #fff;
+    padding: 0 10px;
+}
+/*02-08-2016*/
+.my-attachments {
+    display: flex;
+}
+.attachment-icon {
+    width: 200px;
+    background: white;
+}
+.attachment-file {
+    flex: 1;
+    background: white;
+}
+.edd_message_attachment{
+    background: #fff !important;
+}
+.edd_download_download_name.edd_name_th {
+    width: 25% !important;
+}
+.edd_download_download_files.edd_file_th {
+    width: 25% !important;
+}
+/*02-08-2016*/
