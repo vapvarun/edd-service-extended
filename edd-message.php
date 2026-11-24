@@ -12,6 +12,12 @@
  */
 defined('ABSPATH') or die('Plugin file cannot be accessed directly.');
 
+// One copy only: stop if this plugin is already loaded from another folder.
+if ( defined( 'EDD_SERVICE_EXTENDED_LOADED' ) ) {
+	return;
+}
+define( 'EDD_SERVICE_EXTENDED_LOADED', __FILE__ );
+
 if (!defined('')) {
 
     define('WBCOM_EDD_DASH_MSG', '1.0');
